@@ -1,7 +1,43 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello I am Ranjeet</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<!DOCTYPE html><head><meta charset="utf-8"/><title>Ranjeet - - </title><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Webflow" name="generator"/><style>
+/* add custom cursor */
+.typed-words::after {
+  content: "|";
+  display: inline;
+  animation: blink 1s infinite;
+}
+
+/* custom cursor animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style></head><body><div class="test-wrapper"><div class="after">
+  <h1 class="typed-heading">Hey There!!</h1>
+  <div class="typed-words"></div></div>
+  <div class="footer">
+  <div class="text-block">Welcome to my Portfolio.</div>
+</div>
+</div>
+
+<script src="typed.js"></script>
+
+<script>
+  var typed = new Typed(".typed-words", {
+  strings: ["Hello, I'm Ranjeet.", "I am an Automation Expert.", "I am an Engineer.", "I am a Web Developer."],
+  typeSpeed: 75,
+  backSpeed: 50,
+  backDelay: 800,
+  startDelay: 500,
+  loop: true,
+  showCursor: false,
+  cursorChar: "|",
+  attr: null,
+});
+</script></body></html>
