@@ -1,49 +1,59 @@
-<!DOCTYPE html><head><meta charset="utf-8"/><title>Ranjeet - - </title><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Webflow" name="generator"/><style>
-/* add custom cursor */
-.typed-words::after {
-  content: "|";
-  display: inline;
-  animation: blink 1s infinite;
-}
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Ranjeet - - </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Webflow" name="generator"/>
+  <style>
+    body {
+      background: radial-gradient(circle, #4e54c8, #8f94fb);
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    /* add custom cursor */
+    .typed-words::after {
+      content: "|";
+      display: inline;
+      animation: blink 1s infinite;
+    }
+    /* custom cursor animation */
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="test-wrapper">
+    <div class="after">
+      <h1 class="typed-heading">Hey There!!</h1>
+      <div class="typed-words"></div>
+    </div>
+    <div class="footer">
+      <div class="text-block">Welcome to my Portfolio.</div>
+    </div>
+  </div>
 
-/* custom cursor animation */
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-</style></head><body><div class="test-wrapper"><div class="after">
-  <h1 class="typed-heading">Hey There!!</h1>
-  <div class="typed-words"></div></div>
-  <div class="footer">
-  <div class="text-block">Welcome to my Portfolio.</div>
-</div>
-</div>
+  <script src="typed.js"></script>
 
-<script src="typed.js"></script>
+  <script>
+    var typed = new Typed(".typed-words", {
+      strings: ["Hello, I'm Ranjeet.", "I am an Engineer.", "I am an Automation Expert.", "I am a Web Developer.", "I am a Excel Macro Developer.", "I am a Freelaner."],
+      typeSpeed: 75,
+      backSpeed: 50,
+      backDelay: 800,
+      startDelay: 500,
+      loop: true,
+      showCursor: false,
+      cursorChar: "|",
+      attr: null,
+    });
+  </script>
 
-<script>
-  var typed = new Typed(".typed-words", {
-  strings: ["Hello, I'm Ranjeet.", "I am an Engineer.", "I am an Automation Expert.", "I am a Web Developer.", "I am a Excel Macro Developer.", "I am a Freelaner."],
-  typeSpeed: 75,
-  backSpeed: 50,
-  backDelay: 800,
-  startDelay: 500,
-  loop: true,
-  showCursor: false,
-  cursorChar: "|",
-  attr: null,
-});
-</script></body></html>
-</script>
-<div class="credit" style="position: fixed; bottom: 10px; right: 10px;">
-  <a href="https://webflow.com/made-in-webflow/website/Typing-Text-Typedjs" target="_blank">Inspired by Webflow</a>
-</div>
+  <div class="credit" style="position: fixed; bottom: 10px; right: 10px;">
+    <a href="https://webflow.com/made-in-webflow/website/Typing-Text-Typedjs" target="_blank">Inspired by Webflow</a>
+  </div>
 </body>
 </html>
